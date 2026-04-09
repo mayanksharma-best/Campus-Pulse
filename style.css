@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid black;
+
+}
+
+.content{ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+#searchBar{
+    padding: 2px 30px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px black;
+    text-align: center;
+    margin-top: 5px;
+
+}
+#searchBar:hover{
+    transform: scale(1.02);
+}
