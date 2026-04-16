@@ -1,57 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus Pulse</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header - Navbar -->
     <header class="navbar">
-        <!-- Left Navbar -->
-         <div class="lefttructure">
-            <h2>CampusPulse</h2>
-         </div>
+      <!-- Left Navbar -->
+      <div class="left">
+        <h2>CampusPulse</h2>
+      </div>
 
-         <!-- Center Navbar -->
-          <div class="center">
-            <input id="searchBar" type="text" placeholder="Search Event..">
-          </div>
+      <!-- Center Navbar -->
+      <div class="center">
+        <input id="searchBar" type="text" placeholder="Search Event.." />
+      </div>
 
-         <!-- Right Navbar -->
-        <nav class="right">
-            <ul class="content">
-                <li>🔔</li>
-                <li>Hi, User</li>
-            </ul>
-        </nav>
+      <!-- Right Navbar -->
+      <nav >
+        <ul class="right">
+          <li>🔔</li>
+          <li>Hi, User</li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Side Bar -->
+    <!-- Main Box -->
 
-    <aside class="sidebar">
-
-        <div class="sidebar top">
-            <h3>CampusPulse</h3>
-            <p>Welcome User!</p>
+    <div class="main">
+      <!-- SideBar -->
+      <aside class="sidebar">
+        <div class="top">
+          <h2>CampusPulse</h2>
+          <p>Welcome User!</p>
         </div>
 
-        <nav class="sidebar menu">
-            <ul>
-                <li>Home</li>
-                <li>Opportunities</li>
-                <li>Announcement</li>
-                <li>Events</li>
-                <li>Saved</li>
-            </ul>
+        <nav>
+          <ul class="menu">
+            <li>Home</li>
+            <li>Opportunities</li>
+            <li>Announcement</li>
+            <li>Events</li>
+            <li>Saved</li>
+          </ul>
         </nav>
 
-        <div class="sidebar bottom">
-            <button>Logout</button>
+        <div class="bottom">
+          <button>Logout</button>
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <section class="content">
+        <h2>Dashboard</h2>
+
+        <!-- Cards -->
+        <div class="cards">
+
+            <!-- Card 1  -->
+          <div class="card">
+            <h3 class="title">Google Internship Drive</h3>
+            <span class="badge">Internship</span>
+            <p class="dept">Department: Placement Cell</p>
+            <p class="deadline">Deadline: 20 April</p>
+            <p class="time-left">⏳ 2 days left</p>
+            <button class="save-btn">⭐ Save</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <h3 class="title">Hackathon 2026</h3>
+            <span class="badge">Event</span>
+            <p class="dept">Department: Coding Club</p>
+            <p class="deadline">Deadline: 18 April</p>
+            <p class="time-left">⏳ 2 days left</p>
+            <button class="save-btn">⭐ Save</button>
+          </div>
+
+
+          <div class="card">
+            <h3 class="title">Mid Sem Exam Notice</h3>
+            <span class="badge">Announcement</span>
+            <p class="dept">Department: Academics</p>
+            <p class="deadline">Deadline: 25 April</p>
+            <p class="time-left">⏳ 2 days left</p>
+            <button class="save-btn">⭐ Save</button>
+          </div>
+
+
+          <div class="card">
+            <h3 class="title">Google Internship Drive</h3>
+            <span class="badge">Internship</span>
+            <p class="dept">Department: Placement Cell</p>
+            <p class="deadline">Deadline: 20 April</p>
+            <p class="time-left">⏳ 2 days left</p>
+            <button class="save-btn">⭐ Save</button>
+          </div>
+
         </div>
 
-    </aside>
-    
-</body>
+      </section>
+
+    </div>
+
+  </body>
+
 </html>

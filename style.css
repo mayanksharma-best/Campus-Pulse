@@ -3,15 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+
+  background: #f1f5f9;
+
+}
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 12px;
-    border-bottom: 1px solid black;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
 
 }
 
-.content{ 
+.right{ 
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -31,4 +37,114 @@
 }
 #searchBar:hover{
     transform: scale(1.02);
+}
+
+.main{
+    display: flex;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 50px;
+    /* margin-top: 24px; */
+    width: 220px;
+    min-width: 200px;
+     background: #1e293b;
+     color: #ffffff;
+     min-height: 89vh;
+     /* list-style: none; */
+     height: calc(100vh - 60px);
+}
+.top{
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 5px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.bottom button{
+    padding: 3px;
+    cursor: pointer;
+
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    /* padding: 30px; */
+}
+.content h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(220px, 1fr)); */
+    /* grid-template-rows: 1fr 1fr; */
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Cards */
+.card{
+    border: 1px solid black; 
+    /* height: 100px; */
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 150px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.dept, .deadline, .time-left {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.save-btn {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.save-btn:hover {
+  background: #1e293b;
 }
