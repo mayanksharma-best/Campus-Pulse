@@ -268,5 +268,5 @@ document.querySelector(".cards").addEventListener("click", (e) => {
   }
 });
 
-// ---------------- INIT ----------------
+// ---------------- INIT -----------
 applyFilters();
